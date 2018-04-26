@@ -1,0 +1,56 @@
+#block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow,
+#block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img {
+  display: none;
+}
+
+#block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container {
+  background: #EFEFEF;
+}
+
+/****** TYPOGRAPHY ******/ 
+
+/*body*/
+#block-bean-homepage-pl-block-3--2 p {
+  color: #606060;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+/*caption*/
+#block-bean-homepage-pl-block-3--2 .caption {
+  font-size: 1em;
+  margin: 0 1em 1em;
+  font-weight: 300;
+}
+
+/*h2*/
+#block-bean-homepage-pl-block-3--2 h2 {
+  margin: 1em 0 0.5em;
+  text-align:center;
+  font-size: 2em;
+}
+
+/*use $turquoise variable for color*/
+#block-bean-homepage-pl-block-3--2 h2 a {
+  text-decoration-color: #FF525C;
+}
+
+/*use $primary-color variable for color*/
+#block-bean-homepage-pl-block-3--2 h2 a:hover {
+  text-decoration-color: #333333;
+}
+
+/*button*/
+#block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container p a.btn.btn-turquoise {
+  font-size: .9em;
+  line-height: 1.2em;
+  margin-top: 24px;
+  letter-spacing: 0;
+}
+
+/****** TITLE IS REQUIRED ON LINKED POSTCARD BLOCK, HIDING IT FROM DISPLAY ******/
+#block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a {
+    display: none;
+}
