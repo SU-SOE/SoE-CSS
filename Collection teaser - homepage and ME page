@@ -1,16 +1,24 @@
+/****** HIDE IMAGE, ARROW, AND BLOCK TITLE FROM DISPLAYING ******/
 #block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow,
-#block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img {
+#block-bean-big-small-collection-teaser-me- .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow,
+#block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a,
+#block-bean-big-small-collection-teaser-me- .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a,
+#block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img,
+#block-bean-big-small-collection-teaser-me- .bean-stanford-postcard-linked .postcard-linked-container a.postcard-linked-img-container .postcard-linked-img .postcard-linked-arrow img {
   display: none;
 }
 
-#block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container {
+/****** CHANGE BACKGROUND COLOR OF CARD ******/
+#block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container,
+#block-bean-big-small-collection-teaser-me- .bean-stanford-postcard-linked .postcard-linked-container {
   background: #EFEFEF;
 }
 
 /****** TYPOGRAPHY ******/ 
 
 /*body*/
-#block-bean-homepage-pl-block-3--2 p {
+#block-bean-homepage-pl-block-3--2 p,
+#block-bean-big-small-collection-teaser-me- p {
   color: #606060;
   font-weight: 600;
   text-align: center;
@@ -19,38 +27,55 @@
 }
 
 /*caption*/
-#block-bean-homepage-pl-block-3--2 .caption {
+#block-bean-homepage-pl-block-3--2 .caption,
+#block-bean-big-small-collection-teaser-me- .caption {
   font-size: 1em;
   margin: 0 1em 1em;
   font-weight: 300;
 }
 
 /*h2*/
-#block-bean-homepage-pl-block-3--2 h2 {
+#block-bean-homepage-pl-block-3--2 h2,
+#block-bean-big-small-collection-teaser-me- h2 {
   margin: 1em 0 0.5em;
   text-align:center;
   font-size: 2em;
 }
 
 /*use $turquoise variable for color*/
-#block-bean-homepage-pl-block-3--2 h2 a {
+#block-bean-homepage-pl-block-3--2 h2 a,
+#block-bean-big-small-collection-teaser-me- h2 a{
   text-decoration-color: #FF525C;
 }
 
 /*use $primary-color variable for color*/
-#block-bean-homepage-pl-block-3--2 h2 a:hover {
+#block-bean-homepage-pl-block-3--2 h2 a:hover,
+#block-bean-big-small-collection-teaser-me- h2 a:hover {
   text-decoration-color: #333333;
 }
 
 /*button*/
-#block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container p a.btn.btn-turquoise {
+#block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container p a.btn.btn-turquoise,
+#block-bean-big-small-collection-teaser-me- .bean-stanford-postcard-linked .postcard-linked-container p a.btn.btn-turquoise {
   font-size: .9em;
   line-height: 1.2em;
   margin-top: 24px;
   letter-spacing: 0;
 }
 
-/****** TITLE IS REQUIRED ON LINKED POSTCARD BLOCK, HIDING IT FROM DISPLAY ******/
-#block-bean-homepage-pl-block-3--2 .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a {
-    display: none;
+/****** ADDITIONAL TWEAKS TO ME INSTANCE ******/
+
+/*tweaking margin below H2*/
+#block-bean-big-small-collection-teaser-me- h2 {
+  margin: .5em 0 0.2em;
+}
+
+/*tweaking margin below subtitle*/
+#block-bean-big-small-collection-teaser-me- .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p {
+  margin-bottom: .5em;
+}
+
+/*reducing padding on card*/
+#block-bean-big-small-collection-teaser-me- .bean-stanford-postcard-linked .postcard-linked-container {
+  padding: 30px;
 }
