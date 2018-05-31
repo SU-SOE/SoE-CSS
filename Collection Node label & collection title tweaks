@@ -8,6 +8,8 @@
   margin-top: 1px;
 }
 
+/*** SCALE LABEL DOWN RESPONSIVELY: DELETE WHEN IN CODE ***/
+
 @media (max-width: 979px) {
   .node-type-stanford-magazine-article .group-s-mag-article-date-byline .field-name-field-s-mag-article-collection .field-label {
     font-size: 17px;
