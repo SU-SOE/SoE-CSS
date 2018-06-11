@@ -1,19 +1,23 @@
 .bean-stanford-testimonial-block  .postcard  {
     background: $white;
-    padding: 40px;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
-  -moz-box-shadow:  0 2px 2px 0 rgba(0,0,0,0.2);
-  box-shadow:  0 2px 2px 0 rgba(0,0,0,0.2);
-  @media (max-width: 767px) {
+    padding: 0 40px 40px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow:  0 2px 2px 0 rgba(0,0,0,0.2);
+    box-shadow:  0 2px 2px 0 rgba(0,0,0,0.2);
+    @media (max-width: 767px) {
       display: block;
       padding: 0;
-    }
   }
- .bean-stanford-testimonial-block .field-name-field-s-testimonial-superhead {
+}
+.bean-stanford-testimonial-block .field-name-field-s-testimonial-superhead {   
     font-weight: 600;
     font-family: "Roboto Slab", serif;
-  }
+}
 .bean-stanford-testimonial-block  .field-name-field-s-testimonial-quote {
     font-family: "Roboto Slab", serif;
-  }
-
+}
+.field-name-field-s-testimonial-superhead {
+    border-top: #00ECE9 10px solid;
+    display: inline-block;
+    padding-top: 30px;
+}
