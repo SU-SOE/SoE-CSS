@@ -1,0 +1,13 @@
+.infotext {
+    font-size: 56px;
+    font-family: "Roboto-Slab", sans-serif; 
+    color: #333; 
+    font-weight: 600;
+    line-height: 1.2em;
+    letter-spacing: 0;
+    margin: 0;
+}
+p.infotext {
+    margin: 0;
+}
+
