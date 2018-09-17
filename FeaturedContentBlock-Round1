@@ -1,0 +1,42 @@
+/******Global Superhead******/
+
+#block-bean-test-featured-header-1 .paragraphs-item-p-featured .group-overlay-text .field-name-field-p-featured-superhead {
+  letter-spacing: 0;
+}
+
+#block-bean-test-featured-header-1 .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead {
+  font-size: 20px;
+}
+
+.paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead {
+  font-weight: 600;
+}
+
+/******Superhead on IMAGE BACKGROUND ONLY******/
+.paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead a {
+  color: #ffbd54;
+  text-decoration: none;
+}
+
+.paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/******More Link*****/
+
+.paragraphs-item-p-featured .group-overlay-text .field-name-field-p-featured-more-link a {
+  text-decoration-color: #ff525c;
+}
+
+.paragraphs-item-p-featured .group-overlay-text .field-name-field-p-featured-more-link a:hover {
+  text-decoration-color: #ffffff; /***SCSS variable = $white***/
+}
+
+/******VIDEO******/
+
+/***Superhead*****/
+.paragraphs-item-p-featured.has-video .group-overlay-text .field-name-field-p-featured-superhead a:hover {
+  text-decoration: underline;
+  color: #333333; /***SCSS variable = $primary-color***/
+}
