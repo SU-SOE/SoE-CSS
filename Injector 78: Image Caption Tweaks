@@ -1,0 +1,54 @@
+/** WYSIWYG STYLE FIXES from CAW Helper***********************/
+/** https://github.com/SU-UHR/caw_helper/blob/829f930ff7c8a9eafae2140038d68194538cefd5/css/wysiwyg_editor.scss#L9 **/
+.image-caption-right,
+.image-caption-left {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  float: none;
+  width: 100%;
+}
+p.float-left,
+p.float-right {
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+p.float-right,
+ .image-caption-right {
+ /* text-align: right;*/
+}
+
+/* Caption blocks within the WYSIWYG */
+/* https://github.com/SU-UHR/caw_helper/blob/829f930ff7c8a9eafae2140038d68194538cefd5/css/_caw_styles.scss#L743-L774 */
+.image-caption-right,
+.image-caption-left {
+@include box-sizing(border-box);
+  color: #606060;
+  font-size: 16px;
+  line-height: 1.3em;
+  font-weight: 300;
+}
+
+.image-caption-right {
+  float: right;
+  width: 10em;
+  padding: 0em 0em 0em 1.5em;
+  margin: 1em 0em 1em 1.5em;
+}
+
+.image-caption-left {
+  float: left;
+  width: 10em;
+  padding: 0em 1.5em 0em 0em;
+  margin: 1em 1.5em 0em 0em;
+}
+
+.image-caption-right img,
+.image-caption-left img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 0.75em;
+}
