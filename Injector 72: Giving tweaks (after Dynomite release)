@@ -1,0 +1,184 @@
+/** Tweaking margin on H2s in postcard blocks **/
+.block-bean .bean-stanford-postcard .field-name-field-s-postcard-body h2 {
+  margin: 0 0 .8em;
+}
+
+/*margin not taking, with some H2's*/
+.row-fluid .block-bean.span12.no-padding.well h2,
+.row-fluid .block-bean.span4.no-padding.well h2,
+.row-fluid .block-bean.span6.no-padding.well h2 {
+  margin: 0 0 .8em;
+}
+
+/*fix margin-bottom on h3*/
+.bean-stanford-postcard .postcard-content h3,
+.bean-stanford-postcard-linked .postcard-linked-content h3 {
+  margin-bottom: 1em;
+}
+
+/*tweak to wysiwyg superhead style, global */
+p.superhead {
+  margin-bottom:.3em;
+}
+
+/*Fix size of .summary class in postcards */ 
+.row-fluid .block-bean.well .bean-stanford-postcard .field-name-field-s-postcard-body p,
+.row-fluid .block-bean.well .bean-stanford-postcard .field-name-field-s-postcard-body p.summary,
+.bean-stanford-postcard p.summary {
+  font-size: 28px;
+}
+
+/*tweak padding in postcard-block*/
+.row-fluid .block-bean.span12.no-padding.well .postcard-content,
+.row-fluid .block-bean.span4.no-padding.well .postcard-content,
+.row-fluid .block-bean.span6.no-padding.well .postcard-content {
+  padding: 1.5em 1.8em 1.8em;
+}
+
+/*tweak to the paragraph font-size in beans */ 
+.row-fluid .block-bean.well .bean-stanford-postcard .field-name-field-s-postcard-body p {
+  font-size: 18px;
+}
+
+/** Fix where margin is applied to quote instead of superhead, in case no superhead is used**/ 
+.testimonial .field-name-field-s-testimonial-superhead.field {
+  margin-bottom: 0;
+}
+
+.bean-stanford-testimonial-block .quote {
+  margin-top: 0;
+}
+
+/**tweak to email header in footer**/
+#footer.site-footer h2 {
+  font-size: 22px;
+}
+
+/**Issue landing page cards missing container style, and smaller cards needed reduced margin in between**/ 
+.view-stanford-magazine-issues .mag-feat-article-container .mag-article-content-container,
+.view-stanford-magazine-issues .mag-article-container {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  background: #ffffff;
+}
+
+.view-stanford-magazine-issues .mag-article-container {
+  margin-bottom: 50px;
+}
+
+/**links inside wysiwyg main region showing up bold, we want them regualr**/
+.main p a {
+  font-weight: 400;
+}
+
+/*links inside li's in wysiwyg need correct link style*/ 
+.content .field-name-body li a {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+/**line height of .well p too big, reducing line-height**/ 
+.well p {
+  line-height: 1.3;
+}
+
+/**removing margin-bottom on last-child in postcard and postcard-linked blocks**/ 
+.bean-stanford-postcard .postcard-content h2:last-child,
+.bean-stanford-postcard-linked .postcard-linked-content h2:last-child,
+.bean-stanford-postcard .postcard-content h3:last-child,
+.bean-stanford-postcard-linked .postcard-linked-content h3:last-child,
+.bean-stanford-postcard .postcard-content p:last-child,
+.bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p:last-child,
+.bean-stanford-postcard .postcard-content p a.btn:last-child,
+.bean-stanford-postcard-linked .postcard-linked-content p a.btn:last-child,
+.bean-stanford-postcard .postcard-content ul li:last-child,
+.bean-stanford-postcard-linked .postcard-linked-content ul li:last-child {
+  margin-bottom: 10px;
+}
+
+/*adding margin back in to homepage buttons*/
+.front .bean-stanford-postcard .postcard-content p a.btn:last-child,
+.front .bean-stanford-postcard-linked .postcard-linked-content p a.btn:last-child {
+  margin-bottom: 26px;
+}
+
+/*for the view-mode Single Centered Button*/
+.postcard-content p.btn-center a.btn:last-child {
+  margin-bottom 26px;
+}
+
+/*spotlight, remove margin after quote, so it doesn't double up with container padding */ 
+.main .spotlight-all-content-container .spotlight-quote p:last-child {
+  margin-bottom: 10px;
+}
+
+/*pager button font-weight too heavy before hover*/
+.content ul.pager.pager-load-more a {
+  font-weight: 400;
+}
+
+/*h2 in wysiwyg link state should be red not dark gray*/ 
+.content .field-name-body h2 a {
+  color: #b1040e;
+}
+
+/*including line-height for testimonial attribution*/
+.testimonial .field-name-field-s-testimonial-credits {
+  line-height: 1.3;
+}
+
+/*adding margin-top to p in postcard-linked */ 
+.bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-body p {
+    margin-top: 10px;
+}
+
+.content .field-name-body h2 a:hover {
+  color: #333;
+}
+
+.bean-stanford-postcard-linked .postcard .postcard-content .field-name-title a, .bean-stanford-postcard-linked .postcard .postcard-content .postcard-linked-title a, .bean-stanford-postcard-linked .postcard .postcard-linked-content-container .field-name-title a, .bean-stanford-postcard-linked .postcard .postcard-linked-content-container .postcard-linked-title a, .bean-stanford-postcard-linked .postcard-linked-container .postcard-content .field-name-title a, .bean-stanford-postcard-linked .postcard-linked-container .postcard-content .postcard-linked-title a, .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .field-name-title a, .bean-stanford-postcard-linked .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a, .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .field-name-title a, .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-content .postcard-linked-title a, .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .field-name-title a, .bean-stanford-postcard.view-mode-single_centered_button .postcard .postcard-linked-content-container .postcard-linked-title a, .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .field-name-title a, .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-content .postcard-linked-title a, .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .field-name-title a, .bean-stanford-postcard.view-mode-single_centered_button .postcard-linked-container .postcard-linked-content-container .postcard-linked-title a {
+    text-decoration: underline;
+    text-decoration-color: #00ece9;  
+}
+
+.front [id*='block-bean-homepage-2-column-'] .content a:not(.btn) {
+    text-decoration: underline;
+    text-decoration-color: #00ece9;
+}
+
+/** Fix centered button width overwrite **/
+#content-body .content .view-mode-single_centered_button .field-name-field-s-postcard-body a.btn {
+  width: 30%;
+}
+
+/** Fix single centered button margin **/
+#content-body .content .btn a, 
+#content-body .content a.btn {
+  margin-bottom: 0;
+}
+
+/**Tweak to summary class in main wysiwyg, global**/
+.main p.summary {
+  margin: 0 0 1em;
+}
+
+#block-views-f802a1a8fc4560609a7723d97b3dbed1.well.no-padding {
+  padding: 0;    
+}
+
+.row-fluid .block-bean.center-title.well h2:first-of-type {
+  text-align: center;    
+}
+
+.row-fluid .block-bean.center-title.well .postcard-content h2:first-of-type {
+  text-align: inherit;    
+}
+
+.row-fluid .block-bean.span12.no-padding.well.testimonial,
+.row-fluid .block-bean.span4.no-padding.well.testimonial,
+.row-fluid .block-bean.span6.no-padding.well.testimonial {
+    padding: 0 56px 40px;
+}
+
+.testimonial .postcard {
+    padding: 0;
+}
