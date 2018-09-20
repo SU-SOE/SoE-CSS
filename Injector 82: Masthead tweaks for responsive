@@ -118,3 +118,63 @@
     font-size: 17px;
   }
 }
+
+/******MAGAZING TWEAKS******/
+
+@media (max-width: 1200px) {
+  /*Size of Stanford Logo*/
+  .page-magazine #header #logo.logo-mobile img, #header #logo img{
+    max-width: 86px;
+  }
+}
+
+@media (max-width: 767px) {
+  /*tweak padding above Stanford Logo*/
+  .page-magazine #header.header {
+    padding: 4px 0 0 ;
+  }
+  .page-magazine #header.header {
+    min-height: 32px;
+  }
+  /*Logo tweaks*/
+  .page-magazine #site-title-first-line {
+    line-height: 1.1em;
+  }
+  /*vertical align hamburger*/
+  .page-magazine .navbar .btn.btn-navbar {
+    margin-top: -33px;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 479px) {
+  /*height of white masthead*/
+  .page-magazine #header.header {
+    min-height: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  /*height of white masthead*/
+  .page-magazine #header.header {
+    min-height: 26px;
+  }
+  /*font-size of "ENGINEERING"*/
+  .page-magazine #header.header #site-title-first-line.site-title-uppercase a {
+    font-size: 18px;
+  }
+  /*vertical align hamburger*/
+  .page-magazine .navbar .btn.btn-navbar {
+    margin-top: -27px;
+  }
+}
+
+@media (max-width: 380px) {
+  /*height of white masthead*/
+  .page-magazine #header.header {
+    min-height: 30px;
+  }
+    /*vertical align hamburger*/
+  .page-magazine .navbar .btn.btn-navbar {
+    margin-top: -30px;
+  }
+}
