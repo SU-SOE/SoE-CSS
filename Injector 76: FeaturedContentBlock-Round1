@@ -40,3 +40,8 @@
   text-decoration: underline;
   color: #333333; /***SCSS variable = $primary-color***/
 }
+
+/*****IE Fix*****/
+.fullwidth .featured-block {
+  width: 100%;
+}
