@@ -23,6 +23,16 @@
   text-decoration: underline;
 }
 
+/******Superhead on FULL WIDTH IMAGE BACKGROUND ONLY*****/
+.paragraphs-items-field-featured-block-featured-full .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead {
+  font-size: 22px;
+}
+
+/******H2******/
+.front .fullwidth .paragraphs-item-p-featured.has-image .group-headline-h2 {
+  margin-top: .6em;
+}
+
 /******More Link*****/
 
 .paragraphs-item-p-featured .group-overlay-text .field-name-field-p-featured-more-link a {
@@ -31,6 +41,75 @@
 
 .paragraphs-item-p-featured .group-overlay-text .field-name-field-p-featured-more-link a:hover {
   text-decoration-color: #ffffff; /***SCSS variable = $white***/
+}
+
+/******IMAGE ONLY Responsive******/
+
+@media (max-width: 979px){
+  /*container needs padding when the text drops below the image*/
+  .fullwidth .paragraphs-item-p-featured div.group-overlay-text {
+      padding:20px 20px 24px;
+  }
+  /*let's trim the image vertically when it goes above the text, i'm not worried about how it crops yet*/
+  .paragraphs-item-p-featured > .content .field-name-field-p-featured-image img {
+      max-height: 250px;
+      min-height: 200px;
+  }
+  /*killing padding above superhead, now that we've added it to the container instead*/
+  .paragraphs-item-p-featured.has-image .group-overlay-text .field-name-field-p-featured-superhead {
+      padding-top: 0;
+  }
+  /*tweaking superhead when it's a link*/
+  .paragraphs-item-p-featured.has-image .group-overlay-text .field-name-field-p-featured-superhead a {
+    color: #b1040e;
+  }
+  .paragraphs-item-p-featured.has-image .group-overlay-text .field-name-field-p-featured-superhead a:hover {
+    color: #333333;
+    text-decoration: underline;
+  }
+  /******Superhead on FULL WIDTH IMAGE BACKGROUND ONLY*****/
+.paragraphs-items-field-featured-block-featured-full .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead {
+  font-size: 18px;
+}
+  /*tweaking headline on hover when linked*/
+  .paragraphs-item-p-featured.has-image .group-overlay-text .group-headline-h2 a:hover {
+      text-decoration-color: #333333;
+  }
+  /*tweaking description*/
+  .fullwidth .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-description {
+      font-size: 16px;
+      margin: 10px 0 0;
+  }
+  .fullwidth .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-description .field-item {
+      padding-bottom: 0;
+  }
+  /*tweaking spacing around buttons*/
+  .fullwidth .paragraphs-item-p-featured div.group-overlay-text a.btn,
+  .fullwidth .paragraphs-item-p-featured div.group-overlay-text a.btn-orange,
+  .fullwidth .paragraphs-item-p-featured div.group-overlay-text a.btn-pink,
+  .fullwidth .paragraphs-item-p-featured div.group-overlay-text a.btn-turquoise {
+      margin: 10px 0 10px;
+  }
+}
+
+@media (max-width 767px) {
+  /*tweaking margin below block, currently, pushing subnav down*/
+  .row-fluid .block-bean.well.featured-block {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 580px) {
+  /*let's trim the image vertically when it goes above the text, i'm not worried about how it crops yet*/
+  .paragraphs-item-p-featured > .content .field-name-field-p-featured-image img {
+      max-height: 150px;
+      min-height: 100px;
+  }
+  /*tweaking margin around headline*/
+  .fullwidth .paragraphs-item-p-featured.has-image .group-headline-h2 {
+      margin: 10px 0;
+      width: 100%;
+  }
 }
 
 /******VIDEO******/
