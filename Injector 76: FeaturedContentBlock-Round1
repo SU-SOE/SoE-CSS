@@ -1,6 +1,9 @@
-/******Global Superhead******/
+/******GLOBAL******/
 
-#block-bean-test-featured-header-1 .paragraphs-item-p-featured .group-overlay-text .field-name-field-p-featured-superhead {
+/***Superhead***/
+
+#block-bean-test-featured-header-1 .paragraphs-item-p-featured .group-overlay-text .field-name-field-p-featured-superhead,
+.paragraphs-item-p-featured .group-overlay-text .field-name-field-p-featured-superhead {
   letter-spacing: 0;
 }
 
@@ -12,7 +15,25 @@
   font-weight: 600;
 }
 
-/******Superhead on IMAGE BACKGROUND ONLY******/
+/***Description***/
+.paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-description .field-item {
+  line-height: 1.3em;
+}
+
+/********FIX INSET ON SPAN9********/
+.front .block-bean.no-padding.well.featured-block.span9 {
+    width: 62.5%;
+    margin-left: 18.75%;
+    margin-right: 18.75%;
+}
+
+/******************SPECIFIC TO WIDTHS AND STYLE******************/
+
+/**IMAGE BACKGROUND**********************************************/
+
+/***Superhead***/
+
+ /*Global*/
 .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead a {
   color: #ffbd54;
   text-decoration: none;
@@ -23,18 +44,43 @@
   text-decoration: underline;
 }
 
-/******Superhead on FULL WIDTH IMAGE BACKGROUND ONLY*****/
+ /*Full-Width*/
 .paragraphs-items-field-featured-block-featured-full .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead {
   font-size: 22px;
 }
 
-/******H2******/
+ /*Span9*/
+.front .span9 .paragraphs-items-field-featured-block-featured-full .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead,
+.span9 .paragraphs-items-field-featured-block-featured-full .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead {
+  font-size: 20px;
+}
+
+/***H2***/
+
+ /*Full-Width*/
 .front .fullwidth .paragraphs-item-p-featured.has-image .group-headline-h2 {
   margin-top: .6em;
 }
 
-/******More Link*****/
+ /*Span9*/
+.front .span9 .paragraphs-item-p-featured.has-image .group-headline-h2,
+.span9 .paragraphs-item-p-featured.has-image .group-headline-h2 { 
+  font-size: 42px;
+  margin-top: .2em;
+}
 
+/***Descriptoin***/
+
+ /*Span9*/
+.front .span9 .paragraphs-item-p-featured.has-image .field-name-field-p-featured-description .field-item,
+.span9 .paragraphs-item-p-featured.has-image .field-name-field-p-featured-description .field-item  {
+  font-size: 22px;
+  margin: 0 15%;
+}
+
+/***More Link***/
+
+/*Gloabl*/
 .paragraphs-item-p-featured .group-overlay-text .field-name-field-p-featured-more-link a {
   text-decoration-color: #ff525c;
 }
@@ -43,23 +89,58 @@
   text-decoration-color: #ffffff; /***SCSS variable = $white***/
 }
 
-/******IMAGE ONLY Responsive******/
+/***RESPONSIVE*********************************************************************************************************/
+
+/*************IMAGE-ONLY RESPONSIVE*************/
+
+@media (max-width: 1199px) {
+
+/***Superhead***/
+
+  /*Span9*/
+  .front .span9 .paragraphs-items-field-featured-block-featured-full .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead,
+  .span9 .paragraphs-items-field-featured-block-featured-full .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead {
+    font-size: 18px;
+  }
+  
+/***Headline***/
+
+  /*Span9*/
+  .front .span9 .paragraphs-item-p-featured.has-image .group-headline-h2,
+  .span9 .paragraphs-item-p-featured.has-image .group-headline-h2 { 
+    font-size: 36px;
+  }
+
+/*Description*/
+  
+  /*Span9*/
+  .front .span9 .paragraphs-item-p-featured.has-image .field-name-field-p-featured-description .field-item,
+  .span9 .paragraphs-item-p-featured.has-image .field-name-field-p-featured-description .field-item {
+    font-size: 20px;
+  }
+}
 
 @media (max-width: 979px){
+    
+/******FULL-WIDTH******/
   /*container needs padding when the text drops below the image*/
   .fullwidth .paragraphs-item-p-featured div.group-overlay-text {
       padding:20px 20px 24px;
   }
+/******GLOBAL******/  
   /*let's trim the image vertically when it goes above the text, i'm not worried about how it crops yet*/
   .paragraphs-item-p-featured > .content .field-name-field-p-featured-image img {
       max-height: 250px;
       min-height: 200px;
   }
-  /*killing padding above superhead, now that we've added it to the container instead*/
+  /*superhead: killing padding above, now that we've added it to the container instead*/
   .paragraphs-item-p-featured.has-image .group-overlay-text .field-name-field-p-featured-superhead {
       padding-top: 0;
   }
-  /*tweaking superhead when it's a link*/
+
+/**SUPERHEAD**************************************************/
+
+  /**Global***/
   .paragraphs-item-p-featured.has-image .group-overlay-text .field-name-field-p-featured-superhead a {
     color: #b1040e;
   }
@@ -67,15 +148,26 @@
     color: #333333;
     text-decoration: underline;
   }
-  /******Superhead on FULL WIDTH IMAGE BACKGROUND ONLY*****/
-.paragraphs-items-field-featured-block-featured-full .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead {
-  font-size: 18px;
-}
-  /*tweaking headline on hover when linked*/
+  /**Full-Width**/
+  .paragraphs-items-field-featured-block-featured-full .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead {
+    font-size: 18px;
+  }
+  
+/**HEADLINE**************************************************/
+  
+  /**Global**/ 
   .paragraphs-item-p-featured.has-image .group-overlay-text .group-headline-h2 a:hover {
       text-decoration-color: #333333;
   }
-  /*tweaking description*/
+  /**Span9**/
+  .front .span9 .paragraphs-item-p-featured.has-image .group-headline-h2,
+  .span9 .paragraphs-item-p-featured.has-image .group-headline-h2 {
+      font-size: 32px;
+  }
+
+/**DESCRIPTION**************************************************/
+  
+  /**Full-Width**/  
   .fullwidth .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-description {
       font-size: 16px;
       margin: 10px 0 0;
@@ -90,12 +182,33 @@
   .fullwidth .paragraphs-item-p-featured div.group-overlay-text a.btn-turquoise {
       margin: 10px 0 10px;
   }
+  /**Span9**/  
+  .front .span9 .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-description .field-item,
+  .span9 .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-description .field-item {
+    font-size: 18px;
+  }
 }
 
-@media (max-width 767px) {
+@media (max-width: 767px) {
+  
+/**Global**************************************************/
   /*tweaking margin below block, currently, pushing subnav down*/
   .row-fluid .block-bean.well.featured-block {
     margin-bottom: 0;
+  }
+
+/**H2**************************************************/
+  /**Span9**/
+  .front .span9 .paragraphs-item-p-featured.has-image .group-headline-h2,
+  .span9 .paragraphs-item-p-featured.has-image .group-headline-h2 { 
+    font-size: 28px;
+  }
+
+/**Description**************************************************/
+  /**Span9**/
+  .front .span9 .paragraphs-item-p-featured.has-image .field-name-field-p-featured-description .field-item,
+  .span9 .paragraphs-item-p-featured.has-image .field-name-field-p-featured-description .field-item  {
+    margin: 0 8%;
   }
 }
 
@@ -109,6 +222,28 @@
   .fullwidth .paragraphs-item-p-featured.has-image .group-headline-h2 {
       margin: 10px 0;
       width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+/**Superhead**************************************************/
+  /**Span9**/
+  .front .span9 .paragraphs-items-field-featured-block-featured-full .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead,
+  .span9 .paragraphs-items-field-featured-block-featured-full .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-superhead {
+    font-size: 16px;
+  }
+/**H2**************************************************/
+  /**Span9**/
+  .front .span9 .paragraphs-item-p-featured.has-image .group-headline-h2,
+  .span9 .paragraphs-item-p-featured.has-image .group-headline-h2 { 
+    font-size: 24px;
+  }
+/**Description**************************************************/
+  /**Span9**/  
+  .front .span9 .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-description .field-item,
+  .span9 .paragraphs-item-p-featured div.group-overlay-text .field-name-field-p-featured-description .field-item {
+    font-size: 16px;
   }
 }
 
