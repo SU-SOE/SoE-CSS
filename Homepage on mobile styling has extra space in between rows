@@ -1,0 +1,43 @@
+/********FIX INSET ON SPAN9********/
+.front .block-bean.no-padding.well.featured-block.span9 {
+    width: 62.5%;
+    margin-left: 18.75%;
+    margin-right: 18.75%;
+}
+
+/******HOMEPAGE MOBILE TWEAKS******/
+@media (max-width: 767px) {
+  .front .block-bean.no-padding.well.featured-block.span9 {
+    width: 92%;
+    margin-left: 5%;
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  
+  .front .view-stanford-ppl-spot-fw-banner-quote {
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+  
+  .front #block-bean-homepage-2-column-1-button-block p a.btn:last-child,
+  .front #block-bean-homepage-magazine-postcard-butto p a.btn,
+  .front #block-bean-stanford-soe-mailchimp-homepage-,
+  .front #block-bean-homepage-magazine-postcard-butto--2 p.btn-center a.btn {
+    margin-bottom: 0;   
+  }
+  
+  .front #block-bean-homepage-magazine-postcard-butto--2 p.btn-center a.btn:last-child {
+    margin-top: 10px;
+  }
+  
+  .front #block-bean-homepage-magazine-postcard-butto,
+  .front #block-bean-homepage-magazine-postcard-butto--2 {
+    margin: 0 0 10px;
+  }
+}
+
+@media (max-width: 603px) {
+  .front #block-bean-homepage-magazine-postcard-butto p a.btn {
+    margin-top: 10px;
+  }
+}
