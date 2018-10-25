@@ -49,7 +49,7 @@
 .row-fluid .block-bean.span6.no-padding.well.testimonial .field-name-field-s-image-image img,
 .row-fluid .block-bean.span4.no-padding.well.testimonial .field-name-field-s-image-image img,
 .row-fluid .block-bean.span3.no-padding.well.testimonial .field-name-field-s-image-image img{
-  width: auto;   
+  width: 100px   
 }
 
 .row-fluid .block-bean.span12.no-padding.well.testimonial .group-s-circle-image-style {
