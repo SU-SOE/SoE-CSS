@@ -13,7 +13,7 @@
 
 .testimonial .field-name-field-s-image-image img {
   width: 100px; 
-  margin: 10px 0 0px;
+  margin: 10px 0 -10px;
 }
 
 .span12.testimonial .quote {
@@ -55,7 +55,7 @@
 .row-fluid .block-bean.span12.no-padding.well.testimonial .group-s-circle-image-style {
   float: right;
   width: auto;
-  padding: 40px 0 40px 40px;  
+  padding: 40px 0 40px 20px;  
 }
 
 @media (max-width: 979px) {
