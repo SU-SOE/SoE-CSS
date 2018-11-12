@@ -1,8 +1,0 @@
-.page-node-12446 div.quote::before,
-.page-node-12446 .testimonial .quote .field-item::after {
-  display: none;
-}
-
-.page-node-12446 .testimonial .field-name-field-s-testimonial-superhead.field {
-  margin-bottom: 20px;
-}
